@@ -146,7 +146,7 @@
                           completion:(void (^)(NSError *error))completion
 {
     
-    UIViewController *rootViewController = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
+    UIViewController *rootViewController = [[[UIApplication sharedApplication] keyWindow] rootViewController];
     [self authenticateWithAuthProvider:authProvider
                             httpProvider:httpProvider
                                 logger:logger

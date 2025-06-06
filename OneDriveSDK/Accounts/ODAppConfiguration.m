@@ -26,7 +26,7 @@
 - (UIViewController *)parentAuthController
 {
     if (!_parentAuthController){
-        _parentAuthController = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
+        _parentAuthController = [[[UIApplication sharedApplication] keyWindow] rootViewController];
     }
     return _parentAuthController;
 }
